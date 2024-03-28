@@ -1,0 +1,38 @@
+/* Styles for Associates
+-------------------------------------------------- */
+sup #assoc-title.display-1 {
+  top: -1.5em;
+  font-size: 34%;
+  font-style: italic;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+  padding: 10px 15px;
+  margin: 5px 15px;
+  /*border: 1px solid #E1E1E1;
+    background-color: #F6F6F6;
+    font-size: 15px;
+    font-family: Times;*/
+}
+
+q:before {
+  content: open-quote;
+  color: #F13937;
+  font-family: Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+q:after {
+  content: close-quote;
+  color: #F13937;
+  font-family: Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 0;
+  vertical-align: middle;
+  padding: 15px 0 0 5px;
+}

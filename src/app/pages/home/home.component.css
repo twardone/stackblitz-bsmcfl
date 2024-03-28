@@ -1,0 +1,24 @@
+
+/* Style rules for hero image and header */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/images/buffaloSoldierImages/bsmcfl-members.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /*padding-top: 10em;*/
+}
+
+/* Style rules for landing page Buffalo Soldier images */
+.soldierImages,
+.soldierImagesCaption {
+  margin-left: auto !Important;
+  margin-right: auto !Important;
+  width: 50% !Important;
+}
+
+/* Create the CSS for superscript like in the 9th & 10th */
+.super {
+  vertical-align: super;
+  font-size: medium;
+}

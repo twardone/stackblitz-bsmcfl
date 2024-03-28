@@ -1,0 +1,156 @@
+<!-- Header and Hero Image -->
+<header class="jumbotron-fluid hero">
+  <div class="container welcome text-white">
+    <img src="assets/images/buffaloSoldierImages/trans-bsmc-logo.png" alt="Buffalo Soldier Motorcycle Club logo"
+      class="float-left mr-3 img-fluid">
+    <h1>Tampa Bay Chapter</h1>
+    <h3>National Association of Buffalo Soldiers &amp; Troopers Motorcycle Club</h3>
+    <button (focus) = 'onFocus()' type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+      data-bs-target="#requestInformationModal">Request Information</button>
+  </div>
+</header>
+
+<!-- Main Content Area -->
+<main class="container-fluid mt-5 mx-auto">
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <figure class="soldierImages">
+        <a href="about.html">
+          <img src="assets/images/buffaloSoldierImages/9thCalvary.png" alt="group of fitness people" class="img-fluid"
+            width="196" height="250">
+        </a>
+      </figure>
+      <h1 class="soldierImagesCaption">Our Chapter</h1>
+      <p class="lead">Learn about the Buffalo Soldiers 9<span class="super">th</span> and 10<span id="super">th</span>
+        Calvary, and the local Tampa Bay Chapter of the National
+        Association Of Buffalo Soldiers &amp; Troopers Motorcycle Club
+        (NABSTMC).</p>
+    </div>
+
+    <div class="col-sm-4">
+      <figure class="soldierImages">
+        <a href="#">
+          <img alt="group of fitness people" class="img-fluid" height="196"
+            src="assets/images/buffaloSoldierImages/BUSO-Logo-250.png" width="250"></a>
+      </figure>
+      <h1 class="soldierImagesCaption">Our Contributors</h1>
+      <p class="lead">Learn about the businesses in the local community
+        who are part of the Buffalo Soldier initiave for community
+        support, wellness, and fellowship. Visit their websites and
+        contribute to them as they give back to the community.</p>
+    </div>
+
+    <div class="col-sm-4">
+      <figure class="soldierImages">
+        <a href="about.html">
+          <img src="assets/images/buffaloSoldierImages/10thCalvary.png" alt="group of fitness people" class="img-fluid"
+            width="196" height="250"></a>
+      </figure>
+      <h1 class="soldierImagesCaption">Our Scholarship</h1>
+      <p class="lead">Our Chapter is very active in the local Tampa bay
+        Community. In our efforts to give back to those who give so much
+        to us. We have established the “Ready Forward College
+        Scholarship” program for high school seniors within the following
+        counties: Hillsborough, Pinellas, Hernando, Pasco, and Polk. Four
+        (4) $500.00 scholarships will be awarded to two male and two
+        female students based on their academic achievement, community
+        service and other criteria as detailed in the application
+        package.</p>
+    </div>
+
+  </div>
+
+  <div class="row" id="pledgeDivRow">
+    <div class="col" id="pledgeDivCol">
+      <article>
+        <h1>Buffalo Soldier's Pledge </h1>
+        <p class="pledge">I am a buffalo soldier, and as a buffalo
+          soldier I will uphold the standards and traditions set
+          forth by my chapter and the National Association of Buffalo
+          Soldiers and Troopers Motorcycle Clubs.</p>
+
+        <p class="pledge">I am proud of my colors and the rich
+          history that they represent. I will wear my colors with
+          pride and will do all within my power to educate the
+          general public about the rich history of the
+          9<span class="super">th</span> and 10<span class="super">th</span>
+          Cavalry Buffalo Soldiers.</p>
+
+        <p class="pledge">I respect my colors and my Buffalo Soldier
+          sisters and brothers. And when my riding days come to an
+          end, I wish to be remembered as one who served with dignity
+          as a responsible biker and a proud Buffalo Soldier.</p>
+      </article>
+
+    </div>
+    <div class="col">
+      <figure>
+        <img id="pledgeImage" src="assets/images/buffaloSoldierImages/buffalosoldiersimage.png"
+          alt="group of fitness people">
+      </figure>
+
+    </div>
+  </div>
+
+</main>
+<!-- Moddal Form -->
+<div class="row">
+  <div class="col">
+    <div class="modal" id="requestInformationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title" id="requestInformationModalLabel font-weight-bold">Write to us</h4>
+            <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+
+            <form method="POST" class="requires-validation" novalidate>
+              <div class="col-md-12 mb-4">
+                <input class="form-control" id="requestorsName" type="text" name="name" placeholder="Full Name"
+                  required>
+                <div class="valid-feedback">Your name field is valid!</div>
+                <div class="invalid-feedback">Your name field cannot be blank!</div>
+              </div>
+              <div class="col-md-12 mb-4">
+                <input class="form-control" id="requestorsEmail" type="email" name="email" placeholder="E-mail Address"
+                  required>
+                <div class="valid-feedback">Email field is valid!</div>
+                <div class="invalid-feedback">Email field cannot be blank!</div>
+              </div>
+              <div class="col-md-12 mb-4">
+                <input class="form-control" id="requestorsSubject" type="text" name="subject" placeholder="Subject"
+                  required>
+                <div class="valid-feedback">Subject field is valid!</div>
+                <div class="invalid-feedback">Subject field cannot be blank!</div>
+              </div>
+              <div class="col-md-12 mb-4">
+                <textarea class="form-control" id="requestorsMessage" type="text" name="message"
+                  placeholder="Your message" required></textarea>
+                <div class="valid-feedback">Message field is valid!</div>
+                <div class="invalid-feedback">Message field cannot be blank!</div>
+              </div>
+              <div class="form-button mt-3">
+                <button id="btnSubmit" type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  //jQuery for hero image to consume the header window space
+  $(document).ready(function () {
+    alert("this is a test");
+
+  });
+</script>

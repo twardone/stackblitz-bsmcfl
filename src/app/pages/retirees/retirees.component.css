@@ -1,0 +1,104 @@
+/* Retirees
+-------------------------------------------------- */
+/*body {
+    font-family: Montserrat, sans-serif;
+    background: #28223f;
+}*/
+
+.retiree-card {
+  -webkit-user-select: none;
+  user-select: none;
+  /* margin: 100px auto; */
+  background: #000000;
+  /*#231e39;*/
+  color: #b3b8cd;
+  border-radius: 5px;
+  width: 290px;
+  height: 385px;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .75);
+}
+
+.card-img-top {
+  background: url("../../../assets/images/buffaloSoldierImages/gold-gradient-background.png");
+  object-fit: contain;
+  height: 126px;
+  width: 290px;
+  border-radius: 5px 5px 0 0;
+}
+
+.profile {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 47px 0 0 -140px;
+  border: 1px solid #000000;
+  padding: 1px;
+  background: #000000;
+}
+
+.retiree-profile-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 24px 0 0 -19px;
+}
+
+.retiree-about {
+  margin-top: -1px;
+  /* line-height: 12px; */
+}
+
+.retiree-button {
+  margin: 10px 0 40px 0;
+}
+
+.retiree-social-media {
+  margin-top: 5em;
+  margin-left: -4em;
+}
+
+.retiree-msg-btn,
+.retiree-follow-btn {
+  background: #03bfbc;
+  border: 1px solid #03bfbc;
+  padding: 10px 25px;
+  color: #231e39;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  cursor: pointer;
+}
+
+.retiree-follow-btn {
+  margin-left: 10px;
+  background: transparent;
+  color: #02899c;
+}
+
+.retiree-follow-btn:hover {
+  color: #231e39;
+  background: #03bfbc;
+  transition: .5s;
+}
+
+.retiree-container i {
+  padding-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.retiree-container i:hover {
+  color: #03bfbc;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 2.5rem;
+  margin-left: 2em;
+}
+
+.mx-lg-5 {
+  margin-right: 3rem !important;
+  margin-left: 6rem !important;
+}
